@@ -5,20 +5,23 @@ const router = express.Router();
 
 const UserController = require('../controllers/userController');
 
-router.get('/',UserController.home)
+router.get('/',UserController.home);
 
-router.get('/login',UserController.login)
+router.get('/login',UserController.login);
+// router.post('/login',UserController.loginAction);
 
-router.get('/register',UserController.register)
+router.get('/register',UserController.register);
+router.post('/register',UserController.registerAction);
 
-router.get('/forget-password',UserController.forgetPassword)
+router.get('/forget-password',UserController.forgetPassword);
+// router.post('/forget-password',UserController.forgetPasswordAction);
 
-router.get('/daftar-tagihan',UserController.daftarTagihan)
+router.get('/daftar-tagihan',UserController.daftarTagihan);
 
-router.get('/success',UserController.success)
+router.get('/success',UserController.success);
 
-router.get('/error',UserController.error)
+router.get('/error',UserController.error);
 
-// router.get('/login',UserController.login)
+// router.get('/login',UserController.login);
 
 module.exports = router;
