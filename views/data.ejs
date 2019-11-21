@@ -1,0 +1,94 @@
+<%- include('partials/headerIn'); -%>
+
+<div id="home" class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">Profile</a>
+                            <a class="nav-link" id="v-pills-tagihan-tab" data-toggle="pill" href="#v-pills-tagihan" role="tab" aria-controls="v-pills-tagihan" aria-selected="true">Daftar Tagihan</a>
+                            <a class="nav-link" id="v-pills-report-tab" data-toggle="pill" href="#v-pills-report" role="tab" aria-controls="v-pills-report" aria-selected="false">Laporan Tagihan</a>
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <div class="tab-content shadow" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p>profile</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-tagihan" role="tabpanel" aria-labelledby="v-pills-tagihan-tab">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Daftar Tagihan</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                                <td>PLN</td>
+                                            </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Air PDAM</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-report" role="tabpanel" aria-labelledby="v-pills-report-tab">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Jenis Tagihan</th>
+                                        <th scope="col">Biaya</th>
+                                        <th scope="col">Periode</th>
+                                        <th scope="col">Jatuh Tempo</th>
+                                        <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="row">1</th>
+                                            <td>PLN</td>
+                                            <td>Rp. 500000</td>
+                                            <td>21-10-2019</td>
+                                            <td>21-10-2019</td>
+                                            <td>Sudah Bayar</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Air PDAM</td>
+                                            <td>Rp. 300000</td>
+                                            <td>21-10-2019</td>
+                                            <td>21-10-2019</td>
+                                            <td>Belum Bayar</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>BPJS</td>
+                                            <td>Rp. 100000</td>
+                                            <td>21-10-2019</td>
+                                            <td>21-10-2019</td>
+                                            <td>Sudah Bayar</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footerIn'); -%>
