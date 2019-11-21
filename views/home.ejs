@@ -1,67 +1,47 @@
-<%- include('partials/headerIn'); -%>
+<%- include('partials/header'); -%>
 
-<div id="home" class="mt-5">
-    <div class="container">
+<div id="banner">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-tagihan-tab" data-toggle="pill" href="#v-pills-tagihan" role="tab" aria-controls="v-pills-tagihan" aria-selected="true">Info Tagihan</a>
-                        <a class="nav-link" id="v-pills-report-tab" data-toggle="pill" href="#v-pills-report" role="tab" aria-controls="v-pills-report" aria-selected="false">Laporan Tagihan</a>
-                        </div>
+            <div class="col-12 p-0">
+                <div class="wrapper-relative">
+                    <img src=".././public/assets/images/banner.png" alt="logo" width="100%">
+                    <div class="text-absolute">
+                        <h1>Menjaga tagihan dengan JAGA<br>solusi utama tanpa denda </h1>
+                        <p>Kami membantu mengingatkan anda untuk membayar tepat pada waktu nya</p>
+                        <a class="btn-lg btn-primary">Pelajari Lebih Lanjut</a>
                     </div>
-                    <div class="col-9">
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-tagihan" role="tabpanel" aria-labelledby="v-pills-tagihan-tab">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Jenis Tagihan</th>
-                                        <th scope="col">Biaya</th>
-                                        <th scope="col">Periode</th>
-                                        <th scope="col">Jatuh Tempo</th>
-                                        <th scope="col">Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                        <th scope="row">1</th>
-                                            <td>PLN</td>
-                                            <td>Rp. 500000</td>
-                                            <td>21-10-2019</td>
-                                            <td>21-10-2019</td>
-                                            <td>Sudah Bayar</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Air PDAM</td>
-                                            <td>Rp. 300000</td>
-                                            <td>21-10-2019</td>
-                                            <td>21-10-2019</td>
-                                            <td>Belum Bayar</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>BPJS</td>
-                                            <td>Rp. 100000</td>
-                                            <td>21-10-2019</td>
-                                            <td>21-10-2019</td>
-                                            <td>Sudah Bayar</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="tab-pane fade" id="v-pills-report" role="tabpanel" aria-labelledby="v-pills-report-tab">
-                                Laporan
-                            </div>
-                        </div>
-                    </div>
-                </div>  
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<%- include('partials/footerIn'); -%>
+<div class="home-hero">
+    <div class="container-home">
+        <div class="left-column">
+            <div class="image-wrapper">
+                <img src=".././public/assets/images/img_1.png" alt="logo" width="100%">    
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="text-wrapper">
+                <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod sed do eiusmod tempor incididunt ut</p>    
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="intro">
+    <div class="container-home">
+        <div class="">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada fames ac. Elementum nibh tellus molestie nunc non blandit massa enim.</p> 
+        
+            <a href="#" class="btn btn-primary">MORE</a>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer'); -%>

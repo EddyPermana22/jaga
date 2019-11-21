@@ -7,6 +7,10 @@ class UserController {
         res.render('home')
     }
 
+    static data(req, res) {
+        res.render('data')
+    }
+
     static login(req, res) {
         res.render('login')
     }
