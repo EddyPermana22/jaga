@@ -1,16 +1,23 @@
 'use strict'
 
 const express = require('express');
+const session = require('express-session')
 const router = express.Router();
 
 const UserController = require('../controllers/userController');
 
-router.use(function (req, res, next) {
-    console.log('Time:', Date.now())
-    next()
-})
+router.use(session({
+    secret: 'hacktiv8super',
+    resave: false,
+    saveUninitialized: true,
+}))
 
-router.get('/', UserController.userDashboard);
+function checkLogin(req, res, next) {
+    res.send(req.session)
+    // next()
+}
+
+router.get('/',checkLogin, UserController.userDashboard);
 
 router.get('/login', UserController.login);
 router.post('/login', UserController.loginAction);
