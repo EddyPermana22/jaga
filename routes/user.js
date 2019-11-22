@@ -30,7 +30,7 @@ router.post('/register', UserController.registerAction);
 router.get('/forget-password', UserController.forgetPassword);
 // router.post('/forget-password',UserController.forgetPasswordAction);
 
-router.get('/daftar-tagihan', UserController.daftarTagihan);
+router.get('/daftar-tagihan',checkLogin, UserController.daftarTagihan);
 
 router.get('/success', UserController.success);
 
