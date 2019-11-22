@@ -2,6 +2,7 @@
 
 const ModelUser = require('../models').User;
 const bcrypt = require('bcrypt');
+const checkTagihan = require('../helpers/checkTagihan');
 
 class UserController {
     static userDashboard(req, res) {
@@ -104,6 +105,10 @@ class UserController {
 
     static error(req, res) {
         res.render('error')
+    }
+
+    static test(req,res){
+        res.send(checkTagihan('BPJS','0001431556931'))
     }
 
 }

@@ -17,8 +17,6 @@ function checkLogin(req, res, next) {
     // next()
 }
 
-
-
 router.get('/',checkLogin, UserController.userDashboard);
 
 router.get('/login', UserController.login);
@@ -35,6 +33,8 @@ router.get('/daftar-tagihan',checkLogin, UserController.daftarTagihan);
 router.get('/success', UserController.success);
 
 router.get('/error', UserController.error);
+
+router.get('/test',UserController.test)
 
 // router.get('/login',UserController.login);
 

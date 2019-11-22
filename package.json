@@ -18,10 +18,12 @@
   "homepage": "https://github.com/EddyPermana22/jaga#readme",
   "dependencies": {
     "bcrypt": "^3.0.7",
+    "crypto": "^1.0.1",
     "ejs": "^2.7.4",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "pg": "^7.14.0",
-    "sequelize": "^5.21.2"
+    "sequelize": "^5.21.2",
+    "xmlhttprequest": "^1.8.0"
   }
 }
