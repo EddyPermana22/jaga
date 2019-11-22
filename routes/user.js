@@ -17,6 +17,8 @@ function checkLogin(req, res, next) {
     // next()
 }
 
+
+
 router.get('/',checkLogin, UserController.userDashboard);
 
 router.get('/login', UserController.login);
